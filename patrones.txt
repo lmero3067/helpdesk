@@ -1,0 +1,4 @@
+=== PATRONES DE DISEÑO APLICADOS ===
+1. Singleton: Gestor central de tickets (única instancia)
+2. Factory Method: Creación de incidentes por categoría
+3. Observer: Notificaciones automáticas a técnicos
