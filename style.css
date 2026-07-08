@@ -1,0 +1,113 @@
+/* Variables globales */
+:root {
+    --color-primary: #2c3e50;
+    --color-secondary: #3498db;
+    --color-danger: #e74c3c;
+    --color-success: #2ecc71;
+    --color-warning: #f39c12;
+    --font-base: Arial, sans-serif;
+}
+
+/* Reset y box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-base);
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+.btn-primary:hover {
+    background: #1a252f;
+}
+
+.btn-secondary {
+    background: var(--color-secondary);
+    color: white;
+}
+.btn-secondary:hover {
+    background: #217dbb;
+}
+
+.btn-danger {
+    background: var(--color-danger);
+    color: white;
+}
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+/* Formularios */
+.input, .select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.input:focus, .select:focus {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 8px rgba(52,152,219,0.4);
+    outline: none;
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+/* Alertas (Badges) */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+}
+
+.badge-alta {
+    background: var(--color-danger);
+}
+.badge-media {
+    background: var(--color-warning);
+}
+.badge-baja {
+    background: var(--color-success);
+}
