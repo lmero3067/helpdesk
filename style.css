@@ -111,3 +111,39 @@ section {
 .badge-baja {
     background: var(--color-success);
 }
+
+/* === LAYOUT CON FLEXBOX === */
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--color-primary);
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .input, .select, table {
+        width: 100%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
