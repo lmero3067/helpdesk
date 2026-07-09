@@ -12,8 +12,8 @@
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="reportar.html">Reportar</a> |
+        <a href="index.html">Inicio</a>
+        <a href="reportar.html">Reportar</a>
         <a href="tickets.html">Tickets</a>
     </nav>
 
@@ -21,14 +21,14 @@
         <section>
             <h2>Formulario de incidente</h2>
             <form>
-                <label>Título:</label><br>
-                <input type="text" class="input" name="titulo" placeholder="Escribe el título"><br><br>
+                <label for="titulo">Título del incidente:</label><br>
+                <input type="text" class="input" id="titulo" name="titulo" placeholder="Escribe el título"><br><br>
 
-                <label>Categoría:</label><br>
-                <select class="select" name="categoria">
-                    <option>Red</option>
-                    <option>Hardware</option>
-                    <option>Software</option>
+                <label for="categoria">Categoría:</label><br>
+                <select class="select" id="categoria" name="categoria">
+                    <option value="red">Red</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
                 </select><br><br>
 
                 <label>Prioridad:</label><br>
@@ -36,16 +36,16 @@
                 <input type="radio" name="prioridad" value="media"> Media<br>
                 <input type="radio" name="prioridad" value="baja"> Baja<br><br>
 
-                <label>Descripción:</label><br>
-                <textarea class="input" rows="4" cols="40" placeholder="Describe el incidente"></textarea><br><br>
+                <label for="descripcion">Descripción detallada:</label><br>
+                <textarea class="input" id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Describe el incidente"></textarea><br><br>
 
-                <input type="submit" class="btn btn-primary" value="Enviar">
+                <input type="submit" class="btn btn-primary" value="Enviar incidente">
             </form>
         </section>
     </main>
 
     <footer>
-        <p>Universidad Técnica de Manabí - 2026</p>
+        <p>© 2026 - Sistema Help Desk | Universidad Técnica de Manabí</p>
     </footer>
 </body>
 </html>
