@@ -12,17 +12,17 @@
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="reportar.html">Reportar</a>
+        <a href="index.html">Inicio</a> |
+        <a href="reportar.html">Reportar</a> |
         <a href="tickets.html">Tickets</a>
     </nav>
 
     <main>
         <section>
             <h2>Formulario de incidente</h2>
-            <form>
+            <form action="#" method="post">
                 <label for="titulo">Título del incidente:</label><br>
-                <input type="text" class="input" id="titulo" name="titulo" placeholder="Escribe el título"><br><br>
+                <input type="text" class="input" id="titulo" name="titulo" placeholder="Escribe el título" required><br><br>
 
                 <label for="categoria">Categoría:</label><br>
                 <select class="select" id="categoria" name="categoria">
@@ -32,14 +32,14 @@
                 </select><br><br>
 
                 <label>Prioridad:</label><br>
-                <input type="radio" name="prioridad" value="alta"> Alta<br>
-                <input type="radio" name="prioridad" value="media"> Media<br>
-                <input type="radio" name="prioridad" value="baja"> Baja<br><br>
+                <input type="radio" id="alta" name="prioridad" value="alta"> <label for="alta">Alta</label><br>
+                <input type="radio" id="media" name="prioridad" value="media"> <label for="media">Media</label><br>
+                <input type="radio" id="baja" name="prioridad" value="baja"> <label for="baja">Baja</label><br><br>
 
                 <label for="descripcion">Descripción detallada:</label><br>
                 <textarea class="input" id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Describe el incidente"></textarea><br><br>
 
-                <input type="submit" class="btn btn-primary" value="Enviar incidente">
+                <button type="submit" class="btn btn-primary">Enviar incidente</button>
             </form>
         </section>
     </main>
