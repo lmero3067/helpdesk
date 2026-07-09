@@ -12,8 +12,8 @@
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="reportar.html">Reportar</a> |
+        <a href="index.html">Inicio</a>
+        <a href="reportar.html">Reportar</a>
         <a href="tickets.html">Tickets</a>
     </nav>
 
@@ -21,28 +21,45 @@
         <section>
             <h2>Tickets registrados</h2>
 
-            <div class="card">
-                <h3>Ticket #1</h3>
-                <p>Servidor caído en sala 2</p>
-                <span class="badge badge-alta">Alta</span>
-            </div>
-
-            <div class="card">
-                <h3>Ticket #2</h3>
-                <p>Teclado no responde</p>
-                <span class="badge badge-media">Media</span>
-            </div>
-
-            <div class="card">
-                <h3>Ticket #3</h3>
-                <p>Error en aplicación de facturación</p>
-                <span class="badge badge-baja">Baja</span>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Categoría</th>
+                        <th>Prioridad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Servidor caído</td>
+                        <td>Red</td>
+                        <td><span class="badge badge-alta">Alta</span></td>
+                        <td>Abierto</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Teclado no funciona</td>
+                        <td>Hardware</td>
+                        <td><span class="badge badge-media">Media</span></td>
+                        <td>En progreso</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Error en aplicación</td>
+                        <td>Software</td>
+                        <td><span class="badge badge-baja">Baja</span></td>
+                        <td>Resuelto</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
     <footer>
-        <p>Universidad Técnica de Manabí - 2026</p>
+        <p>© 2026 - Sistema Help Desk | Universidad Técnica de Manabí</p>
     </footer>
 </body>
 </html>
