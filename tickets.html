@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Desk - Tickets</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,42 +10,37 @@
     <header>
         <h1>📋 Listado de tickets</h1>
     </header>
+
     <nav>
         <a href="index.html">Inicio</a> |
         <a href="reportar.html">Reportar</a> |
         <a href="tickets.html">Tickets</a>
     </nav>
+
     <main>
         <section>
             <h2>Tickets registrados</h2>
-            <table border="1">
-                <tr>
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Categoría</th>
-                    <th>Prioridad</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Servidor caído</td>
-                    <td>Red</td>
-                    <td>Alta</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Teclado no funciona</td>
-                    <td>Hardware</td>
-                    <td>Media</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Error en app</td>
-                    <td>Software</td>
-                    <td>Baja</td>
-                </tr>
-            </table>
+
+            <div class="card">
+                <h3>Ticket #1</h3>
+                <p>Servidor caído en sala 2</p>
+                <span class="badge badge-alta">Alta</span>
+            </div>
+
+            <div class="card">
+                <h3>Ticket #2</h3>
+                <p>Teclado no responde</p>
+                <span class="badge badge-media">Media</span>
+            </div>
+
+            <div class="card">
+                <h3>Ticket #3</h3>
+                <p>Error en aplicación de facturación</p>
+                <span class="badge badge-baja">Baja</span>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>Universidad Técnica de Manabí - 2026</p>
     </footer>
